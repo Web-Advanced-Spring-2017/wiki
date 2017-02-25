@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css?family=Tinos:400,400i,700,700i");
+body .brand-logo {
+  font-family: 'Tinos', serif;
+  font-weight: 700;
+  font-size: 2em;
+  font-style: italic; }
+
+body #newsFeed {
+  padding: 0 2em; }
+  body #newsFeed h1 {
+    font-family: 'Tinos', serif;
+    font-weight: 700;
+    font-size: 2em; }
+  body #newsFeed h3 {
+    font-family: 'Tinos', serif;
+    font-weight: 400;
+    font-size: 1.5em; }
+  body #newsFeed h4 {
+    font-family: 'Tinos', serif;
+    font-weight: 400;
+    font-size: 1em; }
+  body #newsFeed img {
+    max-width: 100%; }
+
+body .newsArticle {
+  margin: 2em 0; }
