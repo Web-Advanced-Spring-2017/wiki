@@ -1,26 +1,24 @@
 extends layout
 
 block content
-  //- h1= title
-  //- p Welcome to #{title}
-  nav
-    .nav-wrapper
-      a.brand-logo(href="#") My Feed
-      ul#nav-mobile.right.hide-on-med-and-down
-        li: a(href="#") Link 1
-        li: a(href="#") Link 2
-        li: a(href="#") Link 3
+	//- h1= title
+	//- p Welcome to #{title}
+	nav
+		.nav-wrapper
+			a.brand-logo(href="#") My Feed
+			ul#nav-mobile.right.hide-on-med-and-down
+				li: a(href="#") Link 1
+				li: a(href="#") Link 2
+				li: a(href="#") Link 3
 
-  .row
-    form.col.s10#feed-url
-      .row: .input-field.col.s12
-        input(name="url-input" placeholder="Enter feed url" id="Feed URL" type="text")
-        button.btn.waves-effect.waves-light#submit-url(type='submit', name='action')
-          | Submit
-          i.material-icons.right send
+	.row
+		form.col.s10#feed-url
+			.row: .input-field.col.s12
+				input(name="url-input" placeholder="Enter feed url" id="Feed URL" type="text")
+				button.btn.waves-effect.waves-light#submit-url(type='submit', name='action')
+					| Submit
+					i.material-icons.right send
+	.row#newsFeed
 
-
-  .row#newsFeed
-
-  script(src="/bower_components/jquery/dist/jquery.min.js")
-  script(src="js/script.js")
+	script(src="/bower_components/jquery/dist/jquery.min.js")
+	script(src="js/script.js")
