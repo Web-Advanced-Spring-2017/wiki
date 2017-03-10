@@ -1,0 +1,43 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  //- sample form from http://materializecss.com/forms.html
+
+  .row
+  form.col.s12(action="/post" method="post")
+    //- form.col.s12(action="/get" method="get")
+    .row
+      .input-field.col.s6
+        input#first_name.validate(placeholder='Placeholder', type='text', name="user[firstNname]")
+        label(for='first_name') First Name
+      .input-field.col.s6
+        input#last_name.validate(type='text', name="user[lastName]")
+        label(for='last_name') Last Name
+    //- .row
+    //-   .input-field.col.s12
+    //-     input#disabled.validate(disabled='', value='I am not editable', type='text')
+    //-     label(for='disabled') Disabled
+    //- .row
+    //-   .input-field.col.s12
+    //-     input#password.validate(type='password')
+    //-     label(for='password') Password
+    //- .row
+    //-   .input-field.col.s12
+    //-     input#email.validate(type='email')
+    //-     label(for='email') Email
+    //- .row
+    //-   .col.s12
+    //-   This is an inline input field:
+    //-     .input-field.inline
+    //-       input#email.validate(type='email')
+    //-       label(for='email', data-error='wrong', data-success='right') Email
+    .row
+      button.btn.waves-effect.waves-light(type='submit')
+        | Submit
+        i.material-icons.right cloud
+
+  script(src="/bower_components/jquery/dist/jquery.min.js")
+  script(src="/bower_components/materialize/dist/js/materialize.min.js")
+  script(src="js/script.js")
