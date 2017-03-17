@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  nav.teal.accent-4
+    .nav-wrapper
+      img(src="img/chat.svg")
+
+  .container
+    #scroll-container
+    .row.input-container
+      .input-field.col.s10.msg-input.form
+        input#input_text(type="text" length="60")
+        label(for="input_text") Send Message
+      button.btn-floating.waves-effect.waves-light#submitButton(type="submit" name="action")
+        i.material-icons send
+
+  script(src="/bower_components/jquery/dist/jquery.min.js")
+  script(src="/bower_components/materialize/dist/js/materialize.min.js")
+  script(src="js/script.js")

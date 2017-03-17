@@ -1,0 +1,5 @@
+{
+  "mongoLabUser": "foo",
+  "mongoLabPassword": "bar",
+  "mongoLabUri": "mongodb://<dbuser>:<dbpassword>@ds161048.mlab.com:61048/chat-demo"
+}

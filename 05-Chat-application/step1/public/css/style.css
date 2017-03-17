@@ -1,0 +1,43 @@
+body nav img {
+  width: 40px;
+  margin: 0.5em; }
+
+body .container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 90vh; }
+
+body #scroll-container {
+  -webkit-box-flex: 1;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  overflow: auto; }
+  body #scroll-container .row {
+    margin: 20px 0 0; }
+  body #scroll-container .avatar {
+    width: 3em;
+    border-radius: 50%; }
+
+body .msg p {
+  max-width: 70%;
+  margin: 0 1em;
+  padding: 1em;
+  line-height: 1.5em;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2); }
+
+body .user-msg p {
+  border-right: 3px solid teal; }
+
+body .bot-msg p {
+  border-left: 3px solid teal; }
+
+body .input-container #submitButton {
+  margin-top: 1em;
+  margin-left: .5em; }
