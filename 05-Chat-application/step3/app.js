@@ -49,7 +49,6 @@ var server = app.listen(port, function() {
 	console.log('App listening at port: ' + port)
 })
 
-
 // Database Connection
 var uristring = config.mongoLabUri // PRIVATE
 mongoose.Promise = global.Promise // Native Promise (Without library)
@@ -68,10 +67,10 @@ db.once('open', function() {
 })
 
 var params = require('./models/mongo.js')
-var msgParam = new params.msgParam()
+var MsgParam = new params.MsgParam()
 
 // Debugging Mode to reset collection
-// msgParam.remove(function(err, removed) {
+// MsgParam.remove(function(err, removed) {
 //   console.log("RESET COLLECTION")
 // })
 
@@ -99,9 +98,8 @@ io.sockets.on('connection', function(socket) {
 	})
 })
 
-
 function addMsg(msg, callback) {
-	var newMsg = new msgParam(msg)
+	var newMsg = new MsgParam(msg)
 	newMsg.save(function(err) {
 		if (err) callback(err, null)
 		else callback(null, 'saved message')
@@ -109,7 +107,7 @@ function addMsg(msg, callback) {
 }
 
 function sendHistory(socket, callback) {
-	msgParam.find({
+	MsgParam.find({
 		// 'from': socketId
 	}).sort('-date').limit(10).exec(function(err, msg) {
 		if (!err) {

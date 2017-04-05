@@ -62,7 +62,6 @@ $(document).ready(function() {
 	}
 	chat.init()
 
-
 	// When Enter Key is hit
 	$(document).keypress(function(e) {
 		if (e.which === 13) {

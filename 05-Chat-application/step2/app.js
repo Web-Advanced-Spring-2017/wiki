@@ -49,7 +49,6 @@ var server = app.listen(port, function() {
 	console.log('App listening at port: ' + port)
 })
 
-
 // Database Connection
 var uristring = config.mongoLabUri // PRIVATE
 mongoose.Promise = global.Promise // Native Promise (Without library)
@@ -66,7 +65,6 @@ db.on('error', console.error.bind(console, 'connection error:'))
 db.once('open', function() {
 	console.log('DB connected')
 })
-
 
 var io = require('socket.io').listen(server)
 io.sockets.on('connection', function(socket) {
