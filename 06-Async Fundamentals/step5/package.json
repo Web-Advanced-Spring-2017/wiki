@@ -1,0 +1,15 @@
+{
+  "name": "step3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jaskirat",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.4.7",
+    "mkdirp": "^0.5.1"
+  }
+}
