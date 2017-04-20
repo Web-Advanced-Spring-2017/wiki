@@ -48,4 +48,4 @@ var server = app.listen(port, function() {
 
 // Create eventManager Service
 var EventManager = require('./module/eventManager.js')
-var eventManager = new EventManager(server)
+EventManager(server)
