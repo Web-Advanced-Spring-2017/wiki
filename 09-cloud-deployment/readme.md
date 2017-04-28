@@ -84,5 +84,5 @@ Navigate to the URL of the app to confirm it works. `https://web-advanced-js-sam
 
 
 ## Readings
-https://blog.risingstack.com/node-hero-deploy-node-js-heroku-docker/
-http://selbielabs.com/cloud-platforms-compared/
+- [Cloud Platforms Compared](http://selbielabs.com/cloud-platforms-compared/)
+- [Node.js Deployment with Heroku & Docker](https://blog.risingstack.com/node-hero-deploy-node-js-heroku-docker/)
