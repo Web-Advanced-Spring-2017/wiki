@@ -1,0 +1,48 @@
+doctype html
+html
+	head
+		title= title
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		link(rel='stylesheet',href='/bower_components/materialize/dist/css/materialize.min.css')
+		link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+		link(rel='stylesheet',href='/css/style.css')
+		script(src="/bower_components/jquery/dist/jquery.min.js")
+		script(src="/bower_components/materialize/dist/js/materialize.min.js")
+
+	body
+		nav
+			.nav-wrapper
+				a.brand-logo(href='#') Dashboard
+				ul#nav-mobile.right.hide-on-med-and-down
+					
+					if (!user)
+						li
+							a(href='/users/login') Login
+						li
+							a(href='/users/register') Register
+					if (user)
+						li
+							a(href='/') Dashboard
+						li
+							a(href='/users/logout') Logout	
+		
+		.container
+			if (success_msg != "")
+				.row
+					.collection.form-msg.col.s6
+						a(href="#!" class="collection-item green lighten-4  green-text text-darken-4")= success_msg
+			if (error_msg != "")
+				.row
+					.collection.form-msg.col.s6
+						a(href="#!" class="collection-item red lighten-4  red-text text-darken-4")= error_msg
+			if (error != "")
+				.row
+					.collection.form-msg.col.s6
+						a(href="#!" class="collection-item red lighten-4  red-text text-darken-4")= error
+
+			block content
+	
+	hr
+
+	script(src="/js/script.js")
+

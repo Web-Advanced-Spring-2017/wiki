@@ -1,0 +1,21 @@
+extends layout
+
+block content
+	.container
+		br
+		.row
+			.col.s12
+				h5 Login Form
+				
+				form.col.s12
+					.row
+						.input-field.col.s3
+							input#username.validate(type='text')
+							label(for='username') User Name
+					.row
+						.input-field.col.s3
+							input#password.validate(type='password')
+							label(for='password') Password
+					.row
+						.col.s3
+							button.btn.waves-effect.waves-light(type='submit') Submit
