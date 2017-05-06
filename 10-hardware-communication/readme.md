@@ -12,7 +12,7 @@
 - [Windows](https://www.paragon-software.com/home/extfs-windows-pro/download.html)
 - [Mac](http://www.paragon-drivers.com/extfs-mac/)
 
----
+
 ## Steps
 
 - Flash the image onto SD Card
@@ -46,6 +46,6 @@ network={
     psk="your-network-password"
 }
 ```
-'ctrl+x' followed by 'y'
+*'ctrl+x' followed by 'y'*
 
 - [Install Node.js](http://weworkweplay.com/play/raspberry-pi-nodejs/)
