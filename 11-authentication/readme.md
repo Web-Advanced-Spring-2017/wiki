@@ -9,13 +9,12 @@ PassportJs
 
 
 ## Readings
-[OAuth Good-Bad-Ugly](https://code.tutsplus.com/articles/oauth-20-the-good-the-bad-the-ugly--net-33216)
-[Social Auth](https://code.tutsplus.com/articles/social-authentication-for-nodejs-apps-with-passport--cms-21618)
-[Refactoring a basic auth API](http://blog.slatepeak.com/refactoring-a-basic-authenticated-api-with-node-express-and-mongo/)
-Credits: https://github.com/bradtraversy/loginapp
-
-[PassportJS](http://passportjs.org/docs)
-[NPM: Bcrypt Package](https://www.npmjs.com/package/bcryptjs#usage---async)
+- [OAuth Good-Bad-Ugly](https://code.tutsplus.com/articles/oauth-20-the-good-the-bad-the-ugly--net-33216)
+- [Social Auth](https://code.tutsplus.com/articles/social-authentication-for-nodejs-apps-with-passport--cms-21618)
+- [Refactoring a basic auth API](http://blog.slatepeak.com/refactoring-a-basic-authenticated-api-with-node-express-and-mongo/)
+- Credits: https://github.com/bradtraversy/loginapp
+- [PassportJS](http://passportjs.org/docs)
+- [NPM: Bcrypt Package](https://www.npmjs.com/package/bcryptjs#usage---async)
 
 ```
 npm install mongoose passport passport-local passport-http connect-flash bcryptjs express-session express-messages express-validator --save
